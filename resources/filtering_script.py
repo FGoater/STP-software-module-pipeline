@@ -1,3 +1,19 @@
+"""
+Filtering script, version 1.0.0, date: 11/08/2025.
+
+This script filters variants from vcf files that have been annotated by VEP (variant effect predictor), 
+by filtering all variants with GnomAD population frequencies above the vaf_threshold the user provdies, 
+filtering out any variant with a benign Clinvar record, and overriding and retaining any variant with 
+a pathogenic Clinvar record. 
+
+Command:
+    python3 <path-to-filtering-script> <path-to-annotated-vcf> <ouput_vcf_name.vcf> <vaf-filtering-threshold> <logging-file-name.log>
+
+
+"""
+
+
+
 # importing modules
 import pandas as pd
 import logging
