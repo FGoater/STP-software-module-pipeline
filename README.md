@@ -13,17 +13,17 @@ Download the git repository with:
 
 Navigate to the 'modules' folder and use DXcompile to create the pipeline applets in DNAnexus:
 
-    *java -jar /projects/dnanexus/dxCompiler-2.8.0.jar compile [workflow].wdl --destination project-[projectID]:[path-to-workflow-directory]*
+    java -jar /projects/dnanexus/dxCompiler-2.8.0.jar compile [workflow].wdl --destination project-[projectID]:[path-to-workflow-directory]
 
 Collect and record the workflow ID when the pipeline has completed compiling.
 
 Once 'expanded_pipeline_inputs.json' has been completed with DNAnexus file locations, transpile the .json:
 
-    *java -jar  /projects/dnanexus/dxCompiler-2.8.0.jar compile [path-to-expanded_pipeline_wf.wdl] -inputs expanded_pipeline_input.json --compileMode IR*
+    java -jar  /projects/dnanexus/dxCompiler-2.8.0.jar compile [path-to-expanded_pipeline_wf.wdl] -inputs expanded_pipeline_input.json --compileMode IR
 
 Finally the pipeline can be run:
     
-    *dx run [workflow-ID] -f expanded_pipeline_input.dx.json --destination project-[ProjectID]:/file-path-to-DNAnexus-output-folder --delay-workspace-destruction*
+    dx run [workflow-ID] -f expanded_pipeline_input.dx.json --destination project-[ProjectID]:/file-path-to-DNAnexus-output-folder --delay-workspace-destruction
 
 The pipeline can be monitored on the DNAnexus dashboard and dx download [fileID] can be used to pull down the outputs into your local workspace upon completion. 
 
