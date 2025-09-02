@@ -25,7 +25,7 @@ Finally the pipeline can be run:
     
     dx run [workflow-ID] -f expanded_pipeline_input.dx.json --destination project-[ProjectID]:/file-path-to-DNAnexus-output-folder --delay-workspace-destruction
 
-The pipeline can be monitored on the DNAnexus dashboard and dx download [fileID] can be used to pull down the outputs into your local workspace upon completion. 
+The pipeline can be monitored on the DNAnexus dashboard and *dx download [fileID]* can be used to pull down the outputs into your local workspace upon completion. 
 
 <h2>Pipeline versions</h2>
 <h4>Version 1.0.0 </h4>
