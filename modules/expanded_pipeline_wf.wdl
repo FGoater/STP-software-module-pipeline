@@ -9,6 +9,11 @@ import "variant_annotation_tasks.wdl" as variant_annotation_tasks
 import "filtering_task.wdl" as filtering_task
 
 workflow expanded_pipeline_inputs {
+    meta {
+        developer: "SWGLH-FG"
+        date: "05.08.2025"
+        version: "1.0.0"
+    }
     input {
         Array[Array[File]] fastqs
         File fa
