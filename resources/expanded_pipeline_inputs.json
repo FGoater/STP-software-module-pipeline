@@ -1,12 +1,12 @@
 {
     "expanded_pipeline_inputs.fastqs": [
         [
-            "path_to_fastqs",
-            "path_to_fastqs"
+            "path_to_fastqs/patient1_R1.fastq.gz",
+            "path_to_fastqs/patient1_R2.fastq.gz"
         ],
         [
-            "path_to_fastqs",
-            "path_to_fastqs"
+            "path_to_fastqs/patient2_R1.fastq.gz",
+            "path_to_fastqs/patient2_R2.fastq.gz"
         ]
     ],
     "expanded_pipeline_inputs.fa": "path_to_genome_reference_fa",
